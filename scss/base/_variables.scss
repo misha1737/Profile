@@ -1,0 +1,25 @@
+//colors
+
+$dBlue:#344d71; //darkBlueColor
+$lBlue:#83969f; //lightBlueColor
+$orange:#f6b431; //orangeColor
+$dOrange:#de9e20;
+$background:#ecedf1; //background color
+$white:#fff;
+
+//font-stack
+
+$stack-sans-serif : Helvetica, Arial, sans-serif;
+$stack-OpenSansR: 'OpenSans-Regular', $stack-sans-serif;
+$stack-ProximaNovaB: 'ProximaNovaBold', $stack-sans-serif;
+$stack-ProximaNovaR: 'ProximaNovaRegular', $stack-sans-serif;
+$stack-ProximaNovaRI: 'ProximaNovaRegularItalic', $stack-sans-serif;
+$stack-ProximaNovaS: 'ProximaNovaSemibold', $stack-sans-serif;
+$stack-RalewayL: 'Raleway-Light', $stack-sans-serif;
+$stack-RalewayM: 'Raleway-Medium', $stack-sans-serif;
+$stack-UbuntuM: 'Ubuntu-M', $stack-sans-serif;
+$stack-entypoS: 'entypo-social' $stack-sans-serif;
+
+//breakpoints
+$brk-wide : '(max-width: 1024px)';
+$brk-narrow : '(max-width: 768px)';

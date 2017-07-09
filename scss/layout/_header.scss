@@ -1,0 +1,36 @@
+header {
+	.fa{
+		margin-top: 20px;
+		margin-left: 10px;
+		 font-size: 25px;
+		 color: $lBlue;
+	}
+	.email{
+	background-color: $white;
+	 @include text(14px,$stack-ProximaNovaS,$lBlue);
+	 padding: 20px;
+	 text-align: right;
+		 span{
+			margin-right:100px;
+		 }
+	}
+	.phoneNumber{
+
+		position: absolute;
+		right: 0;
+		width: 37%;
+	background-color: $dBlue;
+		.fa{
+			font-size: 20px;
+			color: $white;
+			padding: 20px;
+			margin: 0;
+			background-color: $dOrange;
+		}
+
+		span{
+			@include text(25px,$stack-ProximaNovaS,$white);
+			margin-left:20px;
+		}
+	}
+}
