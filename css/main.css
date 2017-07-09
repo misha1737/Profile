@@ -52,17 +52,43 @@ a:visited {
 a:hover {
   color: #fff; }
 
+.callBack .enrol {
+  background-color: #83969f;
+  height: 100px;
+  z-index: 1;
+  width: 80%; }
+.callBack .enrolText p {
+  font-size: 20px;
+  font-family: "ProximaNovaSemibold", Helvetica, Arial, sans-serif;
+  color: #fff;
+  padding: 20px 0;
+  z-index: 10;
+  margin-top: -100px; }
+  .callBack .enrolText p a {
+    text-decoration: underline; }
+.callBack .callBox {
+  margin-top: -450px;
+  z-index: 15;
+  background-color: #344d71;
+  height: 425px; }
+  .callBack .callBox p {
+    padding: 0px 50px; }
+  .callBack .callBox form input {
+    padding: 10px 35px;
+    margin: 0 50px; }
+  .callBack .callBox form p {
+    padding: 0px 50px;
+    padding-top: 20px; }
+
 header .fa {
   margin-top: 20px;
   margin-left: 10px;
   font-size: 25px;
-  color: #83969f; }
+  color: #83969f;
+  float: right; }
   header .fa:hover {
     color: #344d71;
     cursor: pointer; }
-  @media (max-width: 768px) {
-    header .fa {
-      float: right; } }
 header .email {
   background-color: #fff;
   font-size: 14px;
@@ -110,6 +136,13 @@ header .mountain {
   @media (max-width: 768px) {
     header .mountain {
       height: 400px; } }
+@media (max-width: 768px) {
+  header .nav {
+    padding: 0;
+    width: 100%;
+    position: fixed;
+    background-color: #344d71;
+    z-index: 999; } }
 header .menu {
   list-style-type: none;
   margin: 0;
@@ -152,6 +185,13 @@ header .dropdown-menu li {
     color: #344d71; }
     header .menu_btn #top_menu {
       background-color: #344d71; } }
+header p {
+  font-size: 20px;
+  font-family: "ProximaNovaSemibold", Helvetica, Arial, sans-serif;
+  color: #fff; }
+  @media (max-width: 768px) {
+    header p {
+      font-size: 14px; } }
 
 h1 {
   font-size: 30px;
@@ -162,16 +202,18 @@ h1 {
 h2 {
   font-size: 40px;
   font-family: "Raleway-Light", Helvetica, Arial, sans-serif;
-  color: #fff; }
+  color: #fff;
+  margin-top: 100px; }
   @media (max-width: 460px) {
     h2 {
-      font-size: 1.8rem;
-      line-height: 1.1; } }
+      font-size: 20px; } }
 
 h3 {
   font-size: 24px;
   font-family: "Raleway-Medium", Helvetica, Arial, sans-serif;
-  color: #fff; }
+  color: #fff;
+  padding: 50px;
+  padding-bottom: 0px; }
 
 h4 {
   font-size: 20px;

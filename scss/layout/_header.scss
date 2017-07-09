@@ -4,13 +4,11 @@ header {
 		margin-left: 10px;
 		font-size: 25px;
 		color: $lBlue;
+		float:right;
 		 &:hover{
 				color:$dBlue;
 				cursor:pointer;
 		}
-		@media #{$brk-sm} {
-        	float:right;
-    	}
 	}
 	.email{
 	background-color: $white;
@@ -65,10 +63,18 @@ header {
 		background-size: cover;
 		 @media #{$brk-sm} {
         	height:400px;
+        	
     	}
 	}
-
-
+	@media #{$brk-sm} {
+	.nav{
+		padding: 0;
+		width: 100%;
+		position: fixed;
+		background-color: $dBlue;
+		z-index: 999;
+       }
+	}
 	.menu
 	{
 		list-style-type: none;
@@ -95,6 +101,7 @@ header {
 		@media #{$brk-sm} 
 		{
 			li{
+
 				display: block;
 				text-align:center;
 				a{
@@ -133,9 +140,17 @@ header {
 	background-color: $orange;
 	color:$dBlue;
 	#top_menu{
+
 		background-color: $dBlue;
 		}
 	}
+	}
+
+	p{
+		@include text(20px,$stack-ProximaNovaS);
+		@media #{$brk-sm} {
+			font-size: 14px;
+		}
 	}
 }
 

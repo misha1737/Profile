@@ -7,15 +7,17 @@ h1{
 h2{
    
  @include text(40px,$stack-RalewayL,$white);
+ margin-top: 100px;
     @media #{$brk-xs} {
-        font-size: 1.8rem;
-        line-height: 1.1;
+        font-size: 20px;
     }
 }
 
 
 h3{ 
      @include text(24px,$stack-RalewayM,$white);
+     padding: 50px;
+     padding-bottom: 0px;
 }
 
 h4{

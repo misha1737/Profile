@@ -1,4 +1,4 @@
-@mixin text($size, $family:$stack-sans-serif, $color:null, $weight:null, $lineheight:null){
+@mixin text($size, $family:$stack-sans-serif, $color:$white, $weight:null, $lineheight:null){
     font-size: $size;
     font-family: $family;
     color: $color;

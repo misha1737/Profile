@@ -1,0 +1,43 @@
+.callBack{
+	.enrol{
+		
+		background-color: $lBlue;
+		height: 100px;
+		z-index: 1;
+		
+		width: 80%;
+		}
+
+	.enrolText p{
+		@include text(20px,$stack-ProximaNovaS);
+		padding: 20px 0;
+		z-index: 10;
+		margin-top: -100px;
+		
+		a{
+			text-decoration:underline;
+		}
+	} 
+	.callBox{
+		margin-top: -450px;
+		z-index: 15;
+		background-color: $dBlue;
+		height:425px;
+		p{
+			padding: 0px 50px;
+		}
+		form{
+			input{
+				padding: 10px 35px;
+				margin: 0 50px ;
+			}
+
+			p{
+				padding: 0px 50px;
+				padding-top: 20px;
+			}
+
+			}
+
+	}	
+}
