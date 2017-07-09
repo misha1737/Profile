@@ -57,6 +57,12 @@ header .fa {
   margin-left: 10px;
   font-size: 25px;
   color: #83969f; }
+  header .fa:hover {
+    color: #344d71;
+    cursor: pointer; }
+  @media (max-width: 768px) {
+    header .fa {
+      float: right; } }
 header .email {
   background-color: #fff;
   font-size: 14px;
@@ -66,37 +72,98 @@ header .email {
   text-align: right; }
   header .email span {
     margin-right: 100px; }
+  @media (max-width: 768px) {
+    header .email {
+      text-align: left; } }
+  @media (max-width: 460px) {
+    header .email {
+      width: 100%; } }
 header .phoneNumber {
   position: absolute;
   right: 0;
   width: 37%;
   background-color: #344d71; }
+  @media (max-width: 992px) {
+    header .phoneNumber {
+      width: 300px; } }
+  @media (max-width: 460px) {
+    header .phoneNumber {
+      width: 100%;
+      margin-top: 60px; } }
   header .phoneNumber .fa {
     font-size: 20px;
     color: #fff;
     padding: 20px;
     margin: 0;
-    background-color: #de9e20; }
+    background-color: #de9e20;
+    float: none; }
   header .phoneNumber span {
     font-size: 25px;
     font-family: "ProximaNovaSemibold", Helvetica, Arial, sans-serif;
     color: #fff;
     margin-left: 20px; }
+header .mountain {
+  height: 800px;
+  background-color: #f6b431;
+  background-image: url("../img/mountains.png");
+  background-size: cover; }
+  @media (max-width: 768px) {
+    header .mountain {
+      height: 400px; } }
+header .menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0; }
+  header .menu li {
+    padding: 20px;
+    display: inline-block; }
+    header .menu li a {
+      font-size: 16px;
+      font-family: "ProximaNovaSemibold", Helvetica, Arial, sans-serif;
+      color: #fff; }
+      header .menu li a:hover {
+        color: #344d71; }
+      header .menu li a i {
+        color: #fff; }
+  @media (max-width: 768px) {
+    header .menu li {
+      display: block;
+      text-align: center; }
+      header .menu li a {
+        display: block;
+        font-size: 18px; }
+        header .menu li a:hover {
+          color: #10273d; }
+      header .menu li .fa {
+        display: none; } }
+header .dropdown-menu li {
+  padding: 0px; }
+  header .dropdown-menu li a {
+    text-align: center;
+    font-size: 16px;
+    font-family: "ProximaNovaSemibold", Helvetica, Arial, sans-serif;
+    color: #344d71; }
+@media (max-width: 992px) {
+  header .menu_btn {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: #f6b431;
+    color: #344d71; }
+    header .menu_btn #top_menu {
+      background-color: #344d71; } }
 
 h1 {
   font-size: 30px;
   font-family: "ProximaNovaBold", Helvetica, Arial, sans-serif;
   color: #344d71;
   text-transform: uppercase; }
-  @media (max-width: 768px) {
-    h1 {
-      font-size: 15px; } }
 
 h2 {
   font-size: 40px;
   font-family: "Raleway-Light", Helvetica, Arial, sans-serif;
   color: #fff; }
-  @media (max-width: 768px) {
+  @media (max-width: 460px) {
     h2 {
       font-size: 1.8rem;
       line-height: 1.1; } }
