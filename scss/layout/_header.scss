@@ -2,8 +2,15 @@ header {
 	.fa{
 		margin-top: 20px;
 		margin-left: 10px;
-		 font-size: 25px;
-		 color: $lBlue;
+		font-size: 25px;
+		color: $lBlue;
+		 &:hover{
+				color:$dBlue;
+				cursor:pointer;
+		}
+		@media #{$brk-sm} {
+        	float:right;
+    	}
 	}
 	.email{
 	background-color: $white;
@@ -13,19 +20,37 @@ header {
 		 span{
 			margin-right:100px;
 		 }
+	@media #{$brk-sm} {
+        text-align: left;
+    }
+     @media #{$brk-xs} {
+        	width: 100%;
+    	}
+
+
 	}
 	.phoneNumber{
 
 		position: absolute;
 		right: 0;
 		width: 37%;
-	background-color: $dBlue;
+		background-color: $dBlue;
+		 @media #{$brk-md} {
+        	width: 300px;
+    	}
+    	 @media #{$brk-xs} {
+        	width: 100%;
+        	margin-top: 60px;
+        
+    	}
 		.fa{
 			font-size: 20px;
 			color: $white;
 			padding: 20px;
 			margin: 0;
 			background-color: $dOrange;
+			float:none;
+
 		}
 
 		span{
@@ -33,4 +58,84 @@ header {
 			margin-left:20px;
 		}
 	}
+	.mountain{
+		height:800px;
+		background-color:$orange;
+		background-image: url('../img/mountains.png');
+		background-size: cover;
+		 @media #{$brk-sm} {
+        	height:400px;
+    	}
+	}
+
+
+	.menu
+	{
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		li
+		{	
+			padding: 20px;
+			display: inline-block;
+			a
+			{
+				@include text(16px,$stack-ProximaNovaS,$white);
+				&:hover
+				{
+				color:$dBlue;
+				}	
+				i{
+					color:$white;
+				}
+
+			}
+				
+		}
+		@media #{$brk-sm} 
+		{
+			li{
+				display: block;
+				text-align:center;
+				a{
+				display: block;
+				font-size: 18px;
+					&:hover{
+					color:#10273d;
+					}
+				}
+				.fa{
+					display:none;
+				}
+			}
+	
+    	}
+	}
+	.dropdown-menu{
+		li 
+		{
+
+			padding: 0px;
+			a
+			{
+			text-align: center;
+			@include text(16px,$stack-ProximaNovaS,$dBlue);
+			}
+		}
+	
+	
+	}	
+	@media #{$brk-md} {
+    .menu_btn{
+	height: 40px;
+	width: 40px;
+	border-radius: 50%;
+	background-color: $orange;
+	color:$dBlue;
+	#top_menu{
+		background-color: $dBlue;
+		}
+	}
+	}
 }
+

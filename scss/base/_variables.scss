@@ -21,5 +21,8 @@ $stack-UbuntuM: 'Ubuntu-M', $stack-sans-serif;
 $stack-entypoS: 'entypo-social' $stack-sans-serif;
 
 //breakpoints
-$brk-wide : '(max-width: 1024px)';
-$brk-narrow : '(max-width: 768px)';
+$brk-lg : '(max-width: 1200px)';
+$brk-md: '(max-width: 992px)';
+$brk-sm : '(max-width: 768px)';
+$brk-xs : '(max-width: 460px)';
+
