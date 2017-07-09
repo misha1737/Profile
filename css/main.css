@@ -1,0 +1,119 @@
+/*order is imp*/
+@font-face {
+  font-family: "RalewayBold";
+  src: url("../fonts/RalewayBold/RalewayBold.eot");
+  src: url("../fonts/RalewayBold/RalewayBold.eot?#iefix") format("embedded-opentype"), url("../fonts/RalewayBold/RalewayBold.woff") format("woff"), url("../fonts/RalewayBold/RalewayBold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+@font-face {
+  font-family: "RobotoRegular";
+  src: url("../fonts/RobotoRegular/RobotoRegular.eot");
+  src: url("../fonts/RobotoRegular/RobotoRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoRegular/RobotoRegular.woff") format("woff"), url("../fonts/RobotoRegular/RobotoRegular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+@font-face {
+  font-family: "OpenSans-Regular";
+  src: url("../fonts/OpenSans-Regular.ttf"); }
+@font-face {
+  font-family: "ProximaNovaBold";
+  src: url("../fonts/ProximaNovaBold.otf"); }
+@font-face {
+  font-family: "ProximaNovaRegular";
+  src: url("../fonts/ProximaNovaRegular.otf"); }
+@font-face {
+  font-family: "ProximaNovaRegularItalic";
+  src: url("../fonts/ProximaNovaRegularItalic.otf"); }
+@font-face {
+  font-family: "ProximaNovaSemibold";
+  src: url("../fonts/ProximaNovaSemibold.otf"); }
+@font-face {
+  font-family: "Raleway-Light.ttf";
+  src: url("../fonts/Raleway-Light.ttf"); }
+@font-face {
+  font-family: "Raleway-Medium.ttf";
+  src: url("../fonts/Raleway-Medium.ttf"); }
+@font-face {
+  font-family: "Ubuntu-M";
+  src: url("../fonts/Ubuntu-M.ttf"); }
+@font-face {
+  font-family: "entypo-social";
+  src: url("../fonts/entypo-social.ttf"); }
+/* Type Selector*/
+body {
+  margin: 0;
+  background-color: #ecedf1; }
+
+/* Links */
+a:link {
+  color: #fff;
+  text-decoration: none; }
+a:visited {
+  color: #fff; }
+a:hover {
+  color: #fff; }
+
+header .fa {
+  margin-top: 20px;
+  margin-left: 10px;
+  font-size: 25px;
+  color: #83969f; }
+header .email {
+  background-color: #fff;
+  font-size: 14px;
+  font-family: "ProximaNovaSemibold", Helvetica, Arial, sans-serif;
+  color: #83969f;
+  padding: 20px;
+  text-align: right; }
+  header .email span {
+    margin-right: 100px; }
+header .phoneNumber {
+  position: absolute;
+  right: 0;
+  width: 37%;
+  background-color: #344d71; }
+  header .phoneNumber .fa {
+    font-size: 20px;
+    color: #fff;
+    padding: 20px;
+    margin: 0;
+    background-color: #de9e20; }
+  header .phoneNumber span {
+    font-size: 25px;
+    font-family: "ProximaNovaSemibold", Helvetica, Arial, sans-serif;
+    color: #fff;
+    margin-left: 20px; }
+
+h1 {
+  font-size: 30px;
+  font-family: "ProximaNovaBold", Helvetica, Arial, sans-serif;
+  color: #344d71;
+  text-transform: uppercase; }
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 15px; } }
+
+h2 {
+  font-size: 40px;
+  font-family: "Raleway-Light", Helvetica, Arial, sans-serif;
+  color: #fff; }
+  @media (max-width: 768px) {
+    h2 {
+      font-size: 1.8rem;
+      line-height: 1.1; } }
+
+h3 {
+  font-size: 24px;
+  font-family: "Raleway-Medium", Helvetica, Arial, sans-serif;
+  color: #fff; }
+
+h4 {
+  font-size: 20px;
+  font-family: "OpenSans-Regular", Helvetica, Arial, sans-serif;
+  color: #83969f; }
+
+h5 {
+  font-size: 16px;
+  font-family: "ProximaNovaRegular", Helvetica, Arial, sans-serif;
+  color: #f6b431; }
+
+/*# sourceMappingURL=main.css.map */
