@@ -6,7 +6,7 @@ h1{
 
 h2{
    
- @include text(40px,$stack-RalewayL,$white);
+ @include text(40px,$stack-RalewayL);
  margin-top: 100px;
     @media #{$brk-xs} {
         font-size: 20px;
@@ -15,9 +15,10 @@ h2{
 
 
 h3{ 
-     @include text(24px,$stack-RalewayM,$white);
-     padding: 50px;
+     @include text(24px,$stack-RalewayM);
+     padding: 0;
      padding-bottom: 0px;
+    padding-top:40px ;
 }
 
 h4{

@@ -6,38 +6,70 @@
 		z-index: 1;
 		
 		width: 80%;
+		@media #{$brk-sm} {
+        width: 100%;
+    	}
 		}
 
 	.enrolText p{
 		@include text(20px,$stack-ProximaNovaS);
-		padding: 20px 0;
+		
 		z-index: 10;
-		margin-top: -100px;
+		margin-top: -80px;
 		
 		a{
 			text-decoration:underline;
 		}
+
+		@media #{$brk-lg} {
+        font-size: 16px;
+    	}
+		
 	} 
+
+	.fa{
+		position: absolute;
+		margin-top: -65px;
+		font-size: 30px;
+		color: $white;
+		@media #{$brk-sm} {
+        display: none;
+    	}
+	}
 	.callBox{
-		margin-top: -450px;
+		margin-top: -490px;
 		z-index: 15;
 		background-color: $dBlue;
-		height:425px;
-		p{
-			padding: 0px 50px;
-		}
-		form{
-			input{
-				padding: 10px 35px;
-				margin: 0 50px ;
-			}
+		height:450px;
 
+		@media #{$brk-sm} {
+        margin: 0;
+   		 }
+		.contentBox{
+		margin:40px;
 			p{
-				padding: 0px 50px;
-				padding-top: 20px;
+					@include text(14px,$stack-ProximaNovaS);
 			}
-
+			form p{
+				margin-top: 20px;
+				@include text(13px,$stack-UbuntuM);
 			}
-
+			input{
+				border-radius: 3px;
+				padding: 20px;
+				width:100%;
+			}
+			button{
+			margin-top: 20px;
+			@include button();
+			}	
+			@media #{$brk-sm} {
+      		 margin:40px 100px;
+   			}	
+   			@media #{$brk-xs} {
+      		 margin:40px;
+   			}		
+		}
 	}	
+
 }

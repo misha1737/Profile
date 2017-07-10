@@ -82,7 +82,7 @@ header {
 		padding: 0;
 		li
 		{	
-			padding: 20px;
+			padding: 0 20px;
 			display: inline-block;
 			a
 			{
@@ -93,15 +93,18 @@ header {
 				}	
 				i{
 					color:$white;
+					padding: 0px;
+					margin-bottom: -5px;
 				}
 
 			}
 				
 		}
+
 		@media #{$brk-sm} 
 		{
 			li{
-
+				padding: 20px;
 				display: block;
 				text-align:center;
 				a{

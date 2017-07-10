@@ -5,3 +5,16 @@
     line-height: $lineheight;
     font-weight: $weight;
 }
+
+@mixin button($width: 100%,$backgroundColor:$orange,$color:$white,$padding:20px,$family:$stack-ProximaNovaS){
+	width: $width;
+	background-color: $backgroundColor;
+	color:$color;
+	padding: $padding;
+	font-family: $family;
+	border:none;
+	border-radius: 3px;
+	&:hover{
+		background-color:$backgroundColor/1.4;
+	}
+}
