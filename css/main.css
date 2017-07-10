@@ -57,28 +57,121 @@ a:hover {
   height: 100px;
   z-index: 1;
   width: 80%; }
+  @media (max-width: 768px) {
+    .callBack .enrol {
+      width: 100%; } }
 .callBack .enrolText p {
   font-size: 20px;
   font-family: "ProximaNovaSemibold", Helvetica, Arial, sans-serif;
   color: #fff;
-  padding: 20px 0;
   z-index: 10;
-  margin-top: -100px; }
+  margin-top: -80px; }
   .callBack .enrolText p a {
     text-decoration: underline; }
+  @media (max-width: 1200px) {
+    .callBack .enrolText p {
+      font-size: 16px; } }
+.callBack .fa {
+  position: absolute;
+  margin-top: -65px;
+  font-size: 30px;
+  color: #fff; }
+  @media (max-width: 768px) {
+    .callBack .fa {
+      display: none; } }
 .callBack .callBox {
-  margin-top: -450px;
+  margin-top: -490px;
   z-index: 15;
   background-color: #344d71;
-  height: 425px; }
-  .callBack .callBox p {
-    padding: 0px 50px; }
-  .callBack .callBox form input {
-    padding: 10px 35px;
-    margin: 0 50px; }
-  .callBack .callBox form p {
-    padding: 0px 50px;
-    padding-top: 20px; }
+  height: 450px; }
+  @media (max-width: 768px) {
+    .callBack .callBox {
+      margin: 0; } }
+  .callBack .callBox .contentBox {
+    margin: 40px; }
+    .callBack .callBox .contentBox p {
+      font-size: 14px;
+      font-family: "ProximaNovaSemibold", Helvetica, Arial, sans-serif;
+      color: #fff; }
+    .callBack .callBox .contentBox form p {
+      margin-top: 20px;
+      font-size: 13px;
+      font-family: "Ubuntu-M", Helvetica, Arial, sans-serif;
+      color: #fff; }
+    .callBack .callBox .contentBox input {
+      border-radius: 3px;
+      padding: 20px;
+      width: 100%; }
+    .callBack .callBox .contentBox button {
+      margin-top: 20px;
+      width: 100%;
+      background-color: #f6b431;
+      color: #fff;
+      padding: 20px;
+      font-family: "ProximaNovaSemibold", Helvetica, Arial, sans-serif;
+      border: none;
+      border-radius: 3px; }
+      .callBack .callBox .contentBox button:hover {
+        background-color: #b08123; }
+    @media (max-width: 768px) {
+      .callBack .callBox .contentBox {
+        margin: 40px 100px; } }
+    @media (max-width: 460px) {
+      .callBack .callBox .contentBox {
+        margin: 40px; } }
+
+.content p {
+  font-size: 14px;
+  font-family: "ProximaNovaRegular", Helvetica, Arial, sans-serif;
+  color: #83969f;
+  margin-top: 30px;
+  line-height: 26px; }
+.content button {
+  bottom: 30px; }
+  .content button i {
+    margin-left: 10px; }
+.content .blueB {
+  width: 60%;
+  background-color: #344d71;
+  color: #fff;
+  padding: 20px;
+  font-family: "ProximaNovaSemibold", Helvetica, Arial, sans-serif;
+  border: none;
+  border-radius: 3px; }
+  .content .blueB:hover {
+    background-color: #253751; }
+.content .orangeB {
+  width: 60%;
+  background-color: #f6b431;
+  color: #fff;
+  padding: 20px;
+  font-family: "ProximaNovaSemibold", Helvetica, Arial, sans-serif;
+  border: none;
+  border-radius: 3px; }
+  .content .orangeB:hover {
+    background-color: #b08123; }
+.content .item {
+  margin-top: -1px;
+  background-color: #fff; }
+.content .video {
+  position: relative;
+  background-image: url(../img/sky.jpg);
+  background-size: cover;
+  height: 250px;
+  padding: 0 15px; }
+  .content .video a {
+    position: absolute;
+    bottom: 20px; }
+  .content .video span {
+    font-size: 16px;
+    font-family: "ProximaNovaRegular", Helvetica, Arial, sans-serif;
+    color: #fff;
+    line-height: 30px;
+    vertical-align: top; }
+  .content .video i {
+    margin: 0 10px;
+    font-size: 30px;
+    color: #fff; }
 
 header .fa {
   margin-top: 20px;
@@ -148,7 +241,7 @@ header .menu {
   margin: 0;
   padding: 0; }
   header .menu li {
-    padding: 20px;
+    padding: 0 20px;
     display: inline-block; }
     header .menu li a {
       font-size: 16px;
@@ -157,9 +250,12 @@ header .menu {
       header .menu li a:hover {
         color: #344d71; }
       header .menu li a i {
-        color: #fff; }
+        color: #fff;
+        padding: 0px;
+        margin-bottom: -5px; }
   @media (max-width: 768px) {
     header .menu li {
+      padding: 20px;
       display: block;
       text-align: center; }
       header .menu li a {
@@ -212,8 +308,9 @@ h3 {
   font-size: 24px;
   font-family: "Raleway-Medium", Helvetica, Arial, sans-serif;
   color: #fff;
-  padding: 50px;
-  padding-bottom: 0px; }
+  padding: 0;
+  padding-bottom: 0px;
+  padding-top: 40px; }
 
 h4 {
   font-size: 20px;
