@@ -127,9 +127,14 @@ a:hover {
   margin-top: 30px;
   line-height: 26px; }
 .content button {
-  bottom: 30px; }
+  position: absolute;
+  bottom: 50px; }
   .content button i {
     margin-left: 10px; }
+  @media (max-width: 992px) {
+    .content button {
+      position: static;
+      margin-bottom: 30px; } }
 .content .blueB {
   width: 60%;
   background-color: #344d71;
@@ -150,13 +155,29 @@ a:hover {
   border-radius: 3px; }
   .content .orangeB:hover {
     background-color: #b08123; }
-.content .item {
+.content .item, .content .itemList {
   margin-top: -1px;
-  background-color: #fff; }
+  background-color: #fff;
+  min-height: 500px; }
+  @media (max-width: 992px) {
+    .content .item, .content .itemList {
+      min-height: auto; } }
+.content .itemList {
+  background-color: #fbfbfb; }
+.content ul {
+  list-style-image: url(../img/circle.png);
+  font-size: 14px;
+  font-family: "ProximaNovaRegular", Helvetica, Arial, sans-serif;
+  color: #344d71; }
+  .content ul li {
+    padding-top: 20px; }
+    @media (max-width: 1200px) {
+      .content ul li {
+        padding-top: 10px; } }
 .content .video {
   position: relative;
   background-image: url(../img/sky.jpg);
-  background-size: cover;
+  background-repeat: no-repeat;
   height: 250px;
   padding: 0 15px; }
   .content .video a {
@@ -172,6 +193,36 @@ a:hover {
     margin: 0 10px;
     font-size: 30px;
     color: #fff; }
+.content .search1, .content .search2, .content .search3, .content .search4, .content .search5, .content .search6 {
+  cursor: pointer; }
+  .content .search1:hover, .content .search2:hover, .content .search3:hover, .content .search4:hover, .content .search5:hover, .content .search6:hover {
+    background-color: #002; }
+  .content .search1 h4, .content .search2 h4, .content .search3 h4, .content .search4 h4, .content .search5 h4, .content .search6 h4 {
+    margin: 0;
+    margin-top: 30px;
+    color: #fff; }
+  .content .search1 p, .content .search2 p, .content .search3 p, .content .search4 p, .content .search5 p, .content .search6 p {
+    margin: 10px 0;
+    font-size: 13px;
+    font-family: "ProximaNovaRegular", Helvetica, Arial, sans-serif;
+    color: #fff; }
+  .content .search1 i, .content .search2 i, .content .search3 i, .content .search4 i, .content .search5 i, .content .search6 i {
+    font-size: 30px;
+    color: #344d71;
+    line-height: 90px;
+    vertical-align: middle; }
+.content .search1 {
+  background-color: #3a557c; }
+.content .search2 {
+  background-color: #466289; }
+.content .search3 {
+  background-color: #253957; }
+.content .search4 {
+  background-color: #516e96; }
+.content .search5 {
+  background-color: #4771af; }
+.content .search6 {
+  background-color: #3a557c; }
 
 header .fa {
   margin-top: 20px;
