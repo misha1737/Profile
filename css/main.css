@@ -174,22 +174,22 @@ a:hover {
     @media (max-width: 1200px) {
       .content ul li {
         padding-top: 10px; } }
-.content .video {
+.content .video, .content .cContent .video2, .content .cContent .video3 {
   position: relative;
   background-image: url(../img/sky.jpg);
   background-repeat: no-repeat;
   height: 250px;
   padding: 0 15px; }
-  .content .video a {
+  .content .video a, .content .cContent .video2 a, .content .cContent .video3 a {
     position: absolute;
     bottom: 20px; }
-  .content .video span {
+  .content .video span, .content .cContent .video2 span, .content .cContent .video3 span {
     font-size: 16px;
     font-family: "ProximaNovaRegular", Helvetica, Arial, sans-serif;
     color: #fff;
     line-height: 30px;
     vertical-align: top; }
-  .content .video i {
+  .content .video i, .content .cContent .video2 i, .content .cContent .video3 i {
     margin: 0 10px;
     font-size: 30px;
     color: #fff; }
@@ -223,6 +223,106 @@ a:hover {
   background-color: #4771af; }
 .content .search6 {
   background-color: #3a557c; }
+.content .contentBackGround {
+  background-color: #fff; }
+.content .vLine {
+  border-left: 1px solid #ede9e9; }
+  @media (max-width: 992px) {
+    .content .vLine {
+      border: none; } }
+.content .hLine {
+  height: 65px;
+  width: 100%;
+  background-color: #fbfbfb;
+  position: absolute;
+  border-bottom: 1px solid #ede9e9; }
+  @media (max-width: 992px) {
+    .content .hLine {
+      display: none; } }
+.content .cContent {
+  height: 550px; }
+  @media (max-width: 992px) {
+    .content .cContent {
+      height: auto; } }
+  .content .cContent .cTitle p {
+    font-size: 14px;
+    font-family: "ProximaNovaRegular", Helvetica, Arial, sans-serif;
+    color: #344d71;
+    margin: 20px;
+    text-transform: uppercase; }
+    @media (max-width: 992px) {
+      .content .cContent .cTitle p {
+        margin-left: 0;
+        margin-top: 60px;
+        border-bottom: 1px solid #ede9e9;
+        font-size: 20px; } }
+  .content .cContent span {
+    font-size: 14px;
+    font-family: "ProximaNovaRegularItalic", Helvetica, Arial, sans-serif;
+    color: #83969f;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    display: inline-block; }
+    @media (max-width: 992px) {
+      .content .cContent span {
+        margin-top: 0;
+        margin-bottom: 20px; } }
+  .content .cContent .video2 {
+    margin-top: 20px;
+    background-image: url(../img/video1.jpg); }
+    .content .cContent .video2 span {
+      line-height: 15px; }
+  .content .cContent .video3 {
+    margin-top: 0px;
+    background-image: url(../img/video2.jpg); }
+    .content .cContent .video3 span {
+      line-height: 15px; }
+
+footer {
+  background-color: #344d71; }
+  footer .footerBackground {
+    background-color: #253957; }
+    footer .footerBackground p {
+      margin-top: 50px;
+      font-size: 18px;
+      font-family: "ProximaNovaSemibold", Helvetica, Arial, sans-serif;
+      color: #f6b431; }
+    footer .footerBackground a {
+      font-size: 13px;
+      font-family: "ProximaNovaSemibold", Helvetica, Arial, sans-serif;
+      color: #fff;
+      line-height: 25px;
+      vertical-align: bottom; }
+    footer .footerBackground .fotterinfo a {
+      line-height: 40px; }
+  footer .phoneNumber {
+    width: 100%;
+    background-color: #344d71; }
+    @media (max-width: 992px) {
+      footer .phoneNumber {
+        width: 300px; } }
+    @media (max-width: 460px) {
+      footer .phoneNumber {
+        width: 100%;
+        margin-top: 60px; } }
+    footer .phoneNumber .fa {
+      font-size: 20px;
+      color: #fff;
+      padding: 20px;
+      margin: 0;
+      background-color: #de9e20;
+      float: none; }
+    footer .phoneNumber span {
+      font-size: 25px;
+      font-family: "ProximaNovaSemibold", Helvetica, Arial, sans-serif;
+      color: #fff;
+      margin-left: 20px; }
+  footer p {
+    font-size: 13px;
+    font-family: "ProximaNovaSemibold", Helvetica, Arial, sans-serif;
+    color: #83969f;
+    padding-top: 20px;
+    padding-top: 300px; }
 
 header .fa {
   margin-top: 20px;
@@ -371,6 +471,7 @@ h4 {
 h5 {
   font-size: 16px;
   font-family: "ProximaNovaRegular", Helvetica, Arial, sans-serif;
-  color: #f6b431; }
+  color: #f6b431;
+  margin-top: 30px; }
 
 /*# sourceMappingURL=main.css.map */
