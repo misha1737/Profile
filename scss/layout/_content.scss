@@ -59,6 +59,8 @@ $videoHeight:250px;
 		a{
 			position: absolute;
 			bottom:20px;
+			
+
 		}
 
 		span{
@@ -70,6 +72,7 @@ $videoHeight:250px;
 			margin: 0 10px ;
 			font-size: 30px;
 			color: $white;
+			
 		}
 	}
 	
@@ -114,6 +117,69 @@ $videoHeight:250px;
 		background-color: #3a557c;
 	}
 
+	
+	.contentBackGround{
+		background-color: $white;
+	}
+	.vLine{
+			border-left: 1px solid $dGray;
+			@media #{$brk-md} {
+        	border: none;
+    		}
+		}
+	.hLine{
+		height:65px;
+		width: 100%;
+		background-color: $gray;
+		position: absolute;
+		border-bottom: 1px solid $dGray;
+		@media #{$brk-md} {
+        	display: none;
+    		}
+	}
+	.cContent{
+		height: 550px;
+		@media #{$brk-md} {
+        	height: auto;
+    		}
+		.cTitle p{
+			@include text(14px,$stack-ProximaNovaR,$dBlue);
+			margin: 20px;
+			text-transform: uppercase;
+			@media #{$brk-md} {
+			margin-left: 0;
+			margin-top: 60px;
+        	border-bottom: 1px solid $dGray;
+        	font-size: 20px;
+    		}
+		}
+		span{
+			@include text(14px,$stack-ProximaNovaRL,$lBlue);
+			margin-top: 10px;
+			margin-bottom: 50px;
+			display: inline-block;
+			@media #{$brk-md} {
+			margin-top: 0;
+        	margin-bottom: 20px;
+    		}
+		}
+		.video2{
+			@extend .video;
+			margin-top: 20px;
+			background-image: url(../img/video1.jpg);
+			span{
+			line-height: 15px;
+			}	
+	
 
-
+		}
+		.video3{
+			@extend .video;
+			margin-top: 0px;
+			background-image: url(../img/video2.jpg);
+			span{
+			line-height: 15px;
+			}	
+		}
+	}
 }
