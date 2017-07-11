@@ -317,7 +317,6 @@ footer {
         margin-top: 0; } }
     @media (max-width: 460px) {
       footer .phoneNumber {
-        width: 30%;
         margin-top: 60px; } }
     footer .phoneNumber .fa {
       font-size: 20px;
